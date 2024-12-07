@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LINGUATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="main">
+      <div class="logoBox">
+      </div>
+    </nav>
+    <div class="sidebar">
+        <a href="index.html" class="btn btn-danger side">Welcome</a>
+        <a href="c_index.html" class="btn btn-warning side">Start Learning Now</a>
+        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><b>Strings</b></h1>
+      <p></p>
+      <h3><b>Defining strings</b></h3>
+      <p></p>
+      <p>Strings in C are actually arrays of characters. Although using pointers in C is an advanced subject, fully explained later on, we will use </p>
+      <p>pointers to a character array to define simple strings, in the following manner:</p>
+      <pre>
+        <code class="ccode">
+          char* name = "John Smith";<br>
+        </code>
+      </pre>
+      <p></p>
+      <p>This method creates a string which we can only use for reading. If we wish to define a string which can be manipulated, we will need </p>
+      <p>to define it as a local character array:</p>
+      <p></p>
+      <pre>
+        <code class="ccode">
+          char name[ ] = "John Smith";<br>
+        </code>
+      </pre>
+<p></p>
+<p>This notation is different because it allocates an array variable so we can manipulate it. The empty brackets notation <b>[ ]</b> tells the </p>
+<p>compiler to calculate the size of the array automatically. This is in fact the same as allocating it explicitly, adding one to the length of </p>
+<p>the string:</p>
+<p></p>
+<p></p>
+<pre>
+  <code class="ccode">
+    char name[ ] = "John Smith";<br>
+     /* is the same as */<br>
+     char name[11] = "John Smith";<br>
+  </code>
+</pre>
+<p></p>
+<p>The reason that we need to add one, although the string <b>John Smith</b> is exactly 10 characters long, is for the string termination: a </p>
+<p>special character (equal to 0) which indicates the end of the string. The end of the string is marked because the program does not </p>
+<p>know the length of the string - only the compiler knows it according to the code.</p>
+<p></p>
+<h3><b>String formatting with printf</b></h3>
+<p></p>
+<p>We can use the printf command to format a string together with other strings, in the following manner:</p>
+<p></p>
+<pre>
+  <code class="ccode">
+    char * name = "John Smith";<br>
+      int age = 27;<br>
+    /* prints out 'John Smith is 27 years old.' */<br>
+    printf("%s is %d years old.\n", name, age);<br>
+  </code>
+</pre>
+<p></p>
+<p>Notice that when printing strings, we must add a newline (\n) character so that our next <b>printf</b> statement will print in a new line.</p>
+<h3><b>String Length</b></h3>
+<p></p>
+<p>The function 'strlen' returns the length of the string which has to be passed as an argument:</p>
+<pre>
+  <code class="ccode">
+    char * name = "Naman";<br>
+    printf("%d\n",strlen(name));<br>
+    <br>
+  </code>
+</pre>
+<h3><b>String Comparision</b></h3>
+<p></p>
+<p>The function <b>strncmp</b> compares between two strings, returning the number 0 if they are equal, or a different number if they are </p>
+<p>different. The arguments are the two strings to be compared, and the maximum comparison length. There is also an unsafe version of </p>
+<p>this function called <b>strcmp</b>, but it is not recommended to use it. For example:</p>
+<p></p>
+<pre>
+  <code class="ccode">
+    char * name = "John";<br>
+    if (strncmp(name, "John", 4) == 0)<br>
+      {<br>
+      printf("Hello, John!\n");<br>
+      }<br>
+      else <br>
+        {<br>
+        printf("You are not John. Go away.\n");<br>
+      }<br>
+  </code>
+</pre>
+<h3><b>String Concatenation</b></h3>
+<p></p>
+<p>The function 'strncat' appends first n characters of src string to the destination string where n is min(n,length(src)); The arguments </p>
+<p>passed are destination string, source string, and n - maximum number of characters to be appended. For Example:</p>
+<p></p>
+<pre>
+  <code class="ccode">
+    char dest[20]="Hello";<br>
+    char src[20]="World";<br>
+    strncat(dest,src,3);<br>
+    printf("%s\n",dest);<br>
+    strncat(dest,src,20);<br>
+    printf("%s\n",dest);<br>
+  </code>
+</pre>
+<p></p>
+<h3><b>Exercise</b></h3>
+<p>Define the string<b> first_name </b>with the value<b> John </b>using the pointer notation, and define the string<b> last_name </b> </p>
+<p>with the value<b > Doe </b> using the local array notation. </p>
+
+    </div>
+    <p><b>Wanna,go back then, click on Back!</b></p>
+<a href="conditions.html" class="btn btn-danger">Back</a>
+<p></p>
+<p><b>Wanna,learn  loops then, click on continue!</b></p>
+    <a href="forloops.html" class="btn btn-danger">Continue</a>
+    <p></p>
+    <p></p>
+  </div>
+
+  </body>
+</html>

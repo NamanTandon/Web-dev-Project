@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LINGUATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="main">
+      <div class="logoBox">
+      </div>
+    </nav>
+    <div class="sidebar">
+        <a href="index.html" class="btn btn-danger side">Welcome</a>
+        <a href="c_index.html" class="btn btn-warning side">Start Learning Now</a>
+        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><b>While Loops</b></h1>
+      <p>While loops are similar to for loops, but have less functionality. A while loop continues executing the while block as long as the </p>
+      <p>condition in the while remains true. For example, the following code will execute exactly ten times:</p>
+      <pre>
+        <code class="ccode">
+        int n = 0;<br>
+        while (n < 10)<br>
+        {<br>
+         n++;<br>
+        }<br>
+        </code>
+      </pre>
+      <p></p>
+      <p>While loops can also execute infinitely if a condition is given which always evaluates as true (non-zero): </p>
+<p> </p>
+<pre>
+  <code class="ccode">
+    while (1)<br>
+    {<br>
+    /* do something */<br>
+    }<br>
+  </code>
+</pre>
+<p></p>
+<h3><b>Loop directives</b></h3>
+<p></p>
+<p>There are two important loop directives that are used in conjunction with all loop types in C - the <b>break</b> and <b>continue</b> directives.</p>
+<p>The <b>break</b> directive halts a loop after ten loops, even though the while loop never finishes:</p>
+<p></p>
+<pre>
+  <code class="ccode">
+    int n = 0;<br>
+    while (1)<br>
+    {<br>
+       n++;<br>
+     if (n == 10)  <br>
+    {  <br>
+    break;  <br>
+    }  <br>
+    }  <br>
+      <br>
+  </code>
+</pre>
+<p>In the following code, the continue directive causes the printf command to be skipped, so that only even numbers are printed out:</p>
+<p></p>
+<pre>
+  <code class="ccode">
+    int n = 0;<br>
+    while (n < 10)<br>
+    {<br>
+    n++;<br>
+    /* check that n is odd */<br>
+     if (n % 2 == 1)<br>
+    {<br>
+    /* go back to the start of the while block */<br>
+    continue;<br>
+    }<br>
+      /* we reach this code only if n is even */<br>
+     printf("The number %d is even.\n", n);<br>
+    }<br>
+  </code>
+</pre>
+<p></p>
+<h3><b>Exercise</b></h3>
+<p></p>
+<p>The <b>array</b> variable consists of a sequence of ten numbers. Inside the while loop, you must write two if conditions, which change the </p>
+<p>flow of the loop in the following manner (without changing the<b> printf </b>command):</p>
+<p><b>1. </b>If the current number which is about to printed is less than 5, don't print it.</p>
+<p><b>2. </b>If the current number which is about to printed is less than 5, don't print it.</p>
+<p>Notice that if you do not advance the iterator variable <b> i </b> and use the <b> continue </b> derivative, you will get stuck in an infinite loop.</p>
+    </div>
+    <p><b>Wanna,go back then, click on Back!</b></p>
+<a href="forloops.html" class="btn btn-danger">Back</a>
+<p></p>
+    <p><b>Wanna,learn from   then click on continue!</b></p>
+    <a href="functions.html" class="btn btn-danger">Continue</a>
+    <p></p>
+    <p></p>
+  </div>
+
+  </body>
+</html>

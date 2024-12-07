@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LINGUATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="main">
+      <div class="logoBox">
+      </div>
+    </nav>
+    <div class="sidebar">
+        <a href="index.html" class="btn btn-danger side">Welcome</a>
+        <a href="c_index.html" class="btn btn-warning side">Start Learning Now</a>
+        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><b>MultiDimensional Arrays</b></h1>
+      <p></p>
+      <p></p>
+      <p>In the previous tutorials on Arrays, we covered, well, arrays and how they work. The arrays we looked at were all one-dimensional, </p>
+      <p>but C can create and use multi-dimensional arrays. Here is the general form of a multidimensional array declaration:</p>
+      <p></p>
+      <pre>
+        <code class="ccode">
+          type name[size1][size2]...[sizeN];<br>
+        </code>
+      </pre>
+      <p>For example, here's a basic one for you to look at -</p>
+      <pre>
+        <code class="ccode">
+          int foo[1][2][3]<br>
+        </code>
+      </pre>
+      <p>or maybe this one -</p>
+      <pre>
+        <code class="ccode">
+        char vowels[1][5] =<br>
+          {<br>
+            {'a', 'e', 'i', 'o', 'u'}<br>
+          };<br>
+        </code>
+      </pre>
+<p></p>
+<p><b><h3>Two-dimensional Arrays</h3></b></p>
+<p></p>
+<p>The simplest form of multidimensional array is the two-dimensional array. A two-dimensional array is pretty much a list of one-</p>
+<p>dimensional arrays. To declare a two-dimensional integer array of size [ x ][ y ], you would write something like this −</p>
+<p></p>
+<pre>
+  <code class="ccode">
+    int foo[1][2][3]<br>
+  </code>
+</pre>
+<p></p>
+<p>Where  <b>type</b> can be any C data type (int, char, long, long long, double, etc.) and arrayName will be a valid C identifier, or variable. A </p>
+<p>two-dimensional array can be considered as a table which will have [ x ] number of rows and [ y ] number of columns. A two-</p>
+<p>dimensional array a, which contains three rows and four columns can be shown and thought about like this −</p>
+
+<p>In this sense, every element in the array a is identified by an element name in the form a[i][j], where 'a' is the name of the array, and </p>
+<p> 'i' and 'j' are the indexes that uniquely identify, or show, each element in 'a'.</p>
+<p></p>
+<p>And honestly, you really don't have to put in a [ x ] value really, because if you did something like this -</p>
+<pre>
+  <code class="ccode">
+    char vowels[ ][5] =<br>
+    {<br>
+    {'A', 'E', 'I', 'O', 'U'},<br>
+    {'a', 'e', 'i', 'o', 'u'}<br>
+    };<br>
+  </code>
+</pre>
+
+<p>the compiler would already know that there are two "dimensions" you could say, but, you need need <b>NEED </b>a [ y ] value!! The</p>
+<p>compiler may be smart, but it will not know how many integers, characters, floats, whatever you're using you have in the dimensions. </p>
+<p>Keep that in mind.</p>
+<b><h3>Initializing Two-Dimensional Arrays</h3></b>
+<p>Multidimensional arrays may be used by specifying bracketed[] values for each row. Below is an array with 3 rows and each row has </p>
+<p>4 columns. To make it easier, you can forget the 3 and keep it blank, it'll still work.</p>
+<pre>
+  <code class="ccode">
+    int a[3][4] =<br>
+    {<br>
+   {0, 1, 2, 3} ,   /*  initializers for row indexed by 0 */  <br>
+     {4, 5, 6, 7} ,   /*  initializers for row indexed by 1 */<br>
+    {8, 9, 10, 11}   /*  initializers for row indexed by 2 */<br>
+    };<br>
+  </code>
+</pre>
+<p>The inside braces, which indicates the wanted row, are optional. The following initialization is the same to the previous example −</p>
+<pre>
+  <code class="ccode">
+    int a[3][4] = {0,1,2,3,4,5,6,7,8,9,10,11};<br>
+  </code>
+</pre>
+<p></p>
+<b><h3>Accessing Two-Dimensional Array Elements</h3></b>
+<p>An element in a two-dimensional array is accessed by using the subscripts, i.e., row index and column index of the array. For example −</p>
+<pre>
+  <code class="ccode">
+    int val = a[2][3];<br>
+  </code>
+</pre>
+<p>The above statement will take the 4th element from the 3rd row of the array.</p>
+<b><h3>Exercise</h3></b>
+<p>Let us try to find out the average marks of a group of five students for two subjects, Mathematics and Physics. To do this, we use a </p>
+<p>two-dimensional array called grades. The marks corresponding to Mathematics would be stored in the first row (grades[0]), </p>
+<p>whereas those corresponding to Physics would be stored in the second row (grades[1]). Complete the following steps so that you </p>
+<p>can execute this program.</p>
+<p></p>
+
+<p><b>1.</b> Declare grades as a two-dimensional array of integers</p>
+<p><b>2.</b> Complete the for loops by specifying their terminating conditions</p>
+<p><b>3.</b> Compute the average marks obtained in each subject</p>
+    </div>
+    <p><b>Wanna,go back then, click on Back!</b></p>
+<a href="arrays.html" class="btn btn-danger">Back</a>
+<p></p>
+    <p><b>Wanna,learn conditions then,click on continue!</b></p>
+    <a href="conditions.html" class="btn btn-danger">Continue</a>
+    <p></p>
+    <p></p>
+  </div>
+
+  </body>
+</html>

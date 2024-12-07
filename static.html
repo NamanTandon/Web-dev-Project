@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LINGUATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="main">
+      <div class="logoBox">
+      </div>
+    </nav>
+    <div class="sidebar">
+        <a href="index.html" class="btn btn-danger side">Welcome</a>
+        <a href="c_index.html" class="btn btn-warning side">Start Learning Now</a>
+        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><b>Static</b></h1>
+      <p></p>
+      <p><b>static</b> is a keyword in the C programming language. It can be used with variables and functions.</p>
+      <h3><b>What is a static variable?</b></h3>
+      <p></p>
+      <p>By default, variables are local to the scope in which they are defined. Variables can be declared as static to increase their scope up to </p>
+      <p>file containing them. As a result, these variables can be accessed anywhere inside a file.</p>
+      <p> </p>
+      <p>Consider the following scenario – we want to count the runners participating in a race:</p>
+      <p></p>
+      <pre>
+        <code class="ccode">
+          #include"stdio.h"<br>
+          int runner()<br>
+          {<br>
+          int count = 0;<br>
+          count++;<br>
+          return count;<br>
+          }<br>
+          int main()<br>
+          {<br>
+          printf("%d ", runner());<br>
+           printf("%d ", runner());<br>
+          return 0;<br>
+          }<br>
+        </code>
+      </pre>
+      <p></p>
+      <p>We will see that count is not updated because it is removed from memory as soon as the function completes. If static is used, </p>
+<p>however:</p>
+<pre>
+  <code class="ccode">
+    #include"stdio.h"<br>
+    int runner()<br>
+    {<br>
+    static int count = 0;<br>
+    count++;<br>
+    return count;<br>
+     }<br>
+    int main()<br>
+     {<br>
+     printf("%d ", runner());<br>
+     printf("%d ", runner());<br>
+    return 0;<br>
+    }<br>
+  </code>
+</pre>
+<p></p>
+      <h3><b>What is a static function?</b></h3>
+      <p>By default, functions are global in C. If we declare a function with <b>static</b>, the scope of that function is reduced to the file containing it.</p>
+      <p>The syntax looks like this:</p>
+      <pre>
+        <code class="ccode">
+          static void fun(void)<br>
+          {<br>
+          printf("I am a static function.");<br>
+          }<br>
+        </code>
+      </pre>
+    <h3><b>Static v/s Global?</b></h3>
+<p> </p>
+<p>While static variables have scope over the file containing them making them accessible only inside a given file, global variables can </p>
+<p>be accessed outside the file too.</p>
+<p></p>
+<h3><b>Exercise</b></h3>
+<p></p>
+<p>In this exercise, try to find the sum of some numbers by using the static keyword. Do not pass any variable representing the running </p>
+<p>total to the <b> sum() </b> function.</p>
+<p></p>
+<p></p>
+<p><b></b></p>
+    </div>
+    <p><b>Wanna,go back then, click on Back!</b></p>
+<a href="functions.html" class="btn btn-danger">Back</a>
+<p></p>
+    <p><b>Wanna,learn from   then click on continue!</b></p>
+    <a href="thankyou.html" class="btn btn-danger">Continue</a>
+    <p></p>
+    <p></p>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LINGUATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="main">
+      <div class="logoBox">
+      </div>
+    </nav>
+    <div class="sidebar">
+      <div class="btn btn-secondary leftSign">
+        &rarr;
+      </div>
+        <a href="index.html" class="btn btn-danger side">Welcome</a>
+        <a href="c_index.html" class="btn btn-warning side">Start Learning Now</a>
+        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><b>For loops</b></h1>
+      <p></p>
+      <p></p>
+      <p>For loops in C are straightforward. They supply the ability to create a loop - a code block that runs multiple times. For loops require </p>
+      <p>an iterator variable, usually notated as <b>i.</b></p>
+      <p></p>
+      <p> For loops give the following functionality:</p>
+      <p><b>1. </b>Initialize the iterator variable using an initial value</p>
+      <p><b>2. </b>Check if the iterator has reached its final value</p>
+      <p> <b>3. </b>Increases the iterator.</p>
+      <p></p>
+      <p>For example, if we wish to iterate on a block for 10 times, we write:</p>
+      <pre>
+        <code class="ccode">
+        int i;<br>
+         for (i = 0; i < 10; i++)<br>
+         {<br>
+         printf("%d\n", i);<br>
+         }<br>
+        </code>
+      </pre>
+<p></p>
+<p>This block will print the numbers 0 through 9 (10 numbers in total).</p>
+<p></p>
+<p>For loops can iterate on array values. For example, if we would want to sum all the values of an array, we would use the iterator <b>i</b> as </p>
+<p>the array index:</p>
+<p></p>
+<pre>
+  <code class="ccode">
+  int array[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };<br>
+  int sum = 0;<br>
+  int i;<br>
+  for (i = 0; i < 10; i++)<br>
+  {<br>
+  for (i = 0; i < 10; i++)<br>
+  }<br>
+  for (i = 0; i < 10; i++)<br>
+  }<br>
+  /* sum now contains a[0] + a[1] + ... + a[9] */<br>
+  printf("Sum of the array is %d\n", sum);<br>
+  </code>
+</pre>
+<p></p>
+<p></p>
+<h3><b>Exercise</b></h3>
+<p>Calculate the factorial (multiplication of all items <b>array[0]</b> to <b>array[9]</b>, inclusive), of the variable <b>array</b>.</p>
+
+    </div>
+    <p><b>Wanna,go back then, click on Back!</b></p>
+<a href="strings.html" class="btn btn-danger">Back</a>
+<p></p>
+    <p><b>Wanna,learn from   then click on continue!</b></p>
+    <a href="whileloops.html" class="btn btn-danger">Continue</a>
+    <p></p>
+    <p></p>
+  </div>
+
+  </body>
+</html>

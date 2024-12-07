@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.logoBox {
+  margin: 10px 20px;
+  font-size: 35px;
+  /* color: darkblue; */
+  color: #555;
+  font-weight: 700;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+.imgBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imgBox__img {
+  width: 50%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 30vh;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 45px;
+  color: #fff;
+  margin: 2.5px 0;
+  position: relative;
+  transition: all .5s;
+  left: 20%;
+}
+
+.side:hover {
+  left: 100%;
+  color: #fff;
+}
+pre{
+  width: 100%;;
+  height: auto;
+  background: #F7F7F7;
+  border-radius: 5px;
+}
+
+.ccode{
+  color: green;
+  font-weight: 700;
+}
+.leftSign{
+  visibility: hidden;
+}
+@media (hover : none) {
+  .leftSign{
+    visibility: visible;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    position: relative;
+    left: 25%;
+    transition: all .5s;
+    font-size: 25px;
+  }
+  .leftSign:hover ~ .side{
+      left: 100%;
+  }
+  .side{
+      left:0;
+  }
+}
+/*
+.search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.search-btn{
+  color: #e84118;
+  float: right;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+}
+
+.search-txt{
+  border-radius:100px;
+  background-color: white;
+  outline: none;
+  float: right;
+  border: 1px solid black;
+  padding:-10;
+  color: white;
+  font-size: 16px;
+  line-height: 45px;
+  width:750px;
+}
+*/

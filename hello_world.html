@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LINGUATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="main">
+      <div class="logoBox">
+      </div>
+    </nav>
+    <div class="sidebar">
+      <div class="btn btn-secondary leftSign">
+        &rarr;
+      </div>
+        <a href="index.html" class="btn btn-danger side">Welcome</a>
+        <a href="c_index.html" class="btn btn-warning side">Start Learning Now</a>
+        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><b>Hello World!</b></h1>
+      <p></p>
+      <p></p>
+      <h3><b>Introduction</b></h3>
+      <p></p>
+      <p>The C programming language is a general purpose programming language, which relates closely to the way machines work.</p>
+      <p>Understanding how computer memory works is an important aspect of the C programming language. Although C can be considered </p>
+      <p>as "hard to learn", C is in fact a very simple language, with very powerful capabilities.</p>
+<p></p>
+      <p>C is a very common language, and it is the language of many applications such as Windows, the Python interpreter, Git, and many </p>
+      <p>many more.</p>
+      <p> C is a compiled language - which means that in order to run it, the compiler (for example, GCC or Visual Studio) must take the code </p>
+<p> that we wrote, process it, and then create an executable file. This file can then be executed, and will do what we intended for the </p>
+<p>program to do.</p>
+  <h3><b>Our First Program!</b></h3>
+<p>Every C program uses libraries, which give the ability to execute necessary functions. For example, the most basic function called </p>
+<p>printf, which prints to the screen, is defined in the stdio.h header file.</p>
+<p>To add the ability to run the printf command to our program, we must add the following include directive to our first line of the code:</p>
+<pre>
+<code class="ccode">
+  #include&lt;stdio.h&gt;
+</code>
+</pre>
+<p>The second part of the code is the actual code which we are going to write. The first code which will run will always reside in the main function.</p>
+<!-- <p><code>int main()</code></p>
+<p><b>{</b></p>
+<p> <b> ... our code goes here</b></p>
+<p><b>}</b></p> -->
+<pre>
+  <code class="ccode">
+    int main(){<br>
+      ....our code goes here;<br>
+    }<br>
+  </code>
+</pre>
+<p>The int keyword indicates that the function main will return an integer - a simple number. The number which will be returned by the </p>
+<p>function indicates whether the program that we wrote worked correctly. If we want to say that our code was run successfully, we will </p>
+<p>return the number 0. A number greater than 0 will mean that the program that we wrote failed.</p>
+<p>For this tutorial, we will return 0 to indicate that our program was successful:</p>
+<pre>
+<code class="ccode">
+  return 0;
+</code>
+</pre>
+
+    </div>
+    <p><b>Wanna,go back then, click on Back!</b></p>
+<a href="c_index.html" class="btn btn-danger">Back</a>
+<p></p>
+    <p><b>Wanna,learn variables and types then ,click on continue!</b></p>
+    <a href="variables_types.html" class="btn btn-danger">Continue</a>
+<p></p>
+  </div>
+
+  </body>
+</html>
